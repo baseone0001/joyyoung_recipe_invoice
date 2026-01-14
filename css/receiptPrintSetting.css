@@ -1,0 +1,34 @@
+/* --------------------
+    列印設定 (通用)
+    -------------------- */
+@media print {
+  @page {
+    /* 這裡可以設定邊界 */
+    /* margin: 2cm; */
+  }
+
+  .page {
+    /* 強制每個 .page 區塊列印在一個新的頁面 */
+    page-break-after: always;
+  }
+
+  /* .page-container {
+    width: 21cm; 
+    height: 29.7cm; 
+  } */
+
+  .page-front {
+    margin-top: 1cm;
+    margin-left: 1cm;
+  }
+
+  .page-back {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .receipt-back {
+    margin-right: 1cm;
+    margin-top: 1cm;
+  }
+}

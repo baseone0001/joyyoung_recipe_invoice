@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="zh-TW" />
+  <link href="css/invoiceLayout.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/printSetting.css" rel="stylesheet" type="text/css" media="all" />
+  <title>Document</title>
+</head>
+
+<body class="formBg fromA4">
+  <div class="printForm-sectionA4 print-page position-relative">
+    <div class="void">作廢</div>
+    <div class="invoice-container" id="invoice-container">
+      <!-- Header Section -->
+      <div class="invoice-header">
+        <div class="company-title">
+          <h1>中揚資訊股份有限公司</h1>
+          <h1>電子發票證明聯</h1>
+          <h1>2025-07-04</h1>
+        </div>
+
+
+        <div class="header-info">
+          <div class="header-row">
+            <div class="header-item">
+              <span>發票號碼:</span>
+              <span>RG95822160</span>
+            </div>
+            <div class="header-item">
+              <span>格　　式:</span>
+              <span>25</span>
+            </div>
+          </div>
+
+          <div class="header-row">
+            <div class="header-item">
+              <span>買　　方:</span>
+              <span>彰化縣後備旅</span>
+            </div>
+          </div>
+
+          <div class="header-row">
+            <div class="header-item">
+              <span>統一編號:</span>
+              <span>93404061</span>
+            </div>
+          </div>
+          <div class="header-row">
+            <div class="header-item">
+              <span>地　　址:</span>
+              <span>臺中市烏日區中山路三段502號</span>
+            </div>
+            <div class="header-item">
+              <span class="page-number">第1頁/共1頁</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table Header -->
+      <div class="table-section">
+        <div class="table-absolute">
+          <div class="table-line" style="width: 242.08px;"></div>
+          <div class="table-line" style="width: 107.2px;"></div>
+          <div class="table-line" style="width: 110px;"></div>
+          <div class="table-line" style="width: 102px;"></div>
+        </div>
+
+
+        <div class="table-header">
+          <div class="table-header-row">
+            <div class="col-product">品名</div>
+            <div class="col-quantity">數量</div>
+            <div class="col-price">單價</div>
+            <div class="col-amount">金額</div>
+          </div>
+          <div class="col-notes-h">備註</div>
+        </div>
+
+
+        <!-- Table Body -->
+        <div class="table-body" style="min-height: 650px;">
+
+          <div class="table-item">
+            <!-- 商品內容 -->
+            <div class="table-row">
+              <div class="col-product text-start">01acer TMP215-55 筆記型電腦</div>
+              <div class="col-quantity text-end">5</div>
+              <div class="col-price text-end">27,157</div>
+              <div class="col-amount text-end">135,785</div>
+            </div>
+            <div class="table-row">
+              <div class="col-product text-start">01acer TMP215-55 筆記型電腦</div>
+              <div class="col-quantity text-end">5</div>
+              <div class="col-price text-end">27,157</div>
+              <div class="col-amount text-end">135,785</div>
+            </div>
+            <div class="table-row">
+              <div class="col-product text-start">01acer TMP215-55 筆記型電腦01acer 01acer TMP215-55 筆記型電腦</div>
+              <div class="col-quantity text-end">5</div>
+              <div class="col-price text-end">27,157</div>
+              <div class="col-amount text-end">135,785</div>
+            </div>
+            <!-- 商品內容結束 -->
+          </div>
+
+          <!-- 備註 -->
+          <div class="col-notes"></div>
+
+
+
+
+
+        </div>
+
+        <div class="table-footer">
+          <!-- 使用 CSS Grid 來精確重現原始的 footer 結構 -->
+          <div class="footer-row">
+
+            <!-- 第一行: 銷售額合計 -->
+            <div class="footer-total">銷售額合計</div>
+            <div class="footer-total-number">135,785</div>
+            <div class="footer-total-text">
+              <div style="font-weight: bold; text-align: center;">營業人蓋統一發票專用</div>
+              <div style="font-size: 8px; text-align: center; margin-top: 2px;">
+                (已條列營業人資料者得免蓋章)
+              </div>
+            </div>
+
+            <!-- 第二行: 營業稅相關 -->
+            <div class="tax-one">營業稅</div>
+            <div class="tax-two">應稅</div>
+            <div class="tax-three">√</div>
+            <div class="tax-four">零稅率</div>
+            <div class="tax-five"></div>
+            <div class="tax-six">免稅</div>
+            <div class="tax-seven"></div>
+            <div class="tax-eight">500</div>
+            <div class="tax-nine">
+              <div class="seller-stamp">
+                <img src="./img/joyyoung.png" alt="">
+              </div>
+              <!-- <div class="seller-info">
+                <span style="width: 64px; flex-shrink: 0; ">賣　　方:</span>
+                <span style="flex: 1;  ">
+                  中揚資訊股份有限公司
+                </span>
+              </div>
+              <div class="seller-info">
+                <span style="width: 64px; flex-shrink: 0;">統一編號:</span>
+                <span style="flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  28081502
+                </span>
+              </div>
+              <div class="seller-info">
+                <span style="width: 64px; flex-shrink: 0;">地　　址:</span>
+                <span style="flex: 1; height: 60px; ">
+                  臺中市西屯區福和里福安五街29號
+                </span>
+              </div> -->
+            </div>
+
+            <!-- 第三行: 總計 -->
+            <div class="sell-labal">總計</div>
+            <div class="sell-total">135,785</div>
+
+            <!-- 第四行: 中文大寫金額 -->
+            <div class="chinese-label">總計新台幣（中文大寫）：</div>
+            <div class="chinese-amount">
+              壹拾參萬伍仟柒佰捌拾伍元整
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
+
+
+
+<script>
+  // 發票分頁處理
+  class InvoicePagination {
+    constructor() {
+      this.maxBodyHeight = 650; // 每頁table-body最大高度
+      this.invoiceContainer = document.getElementById('invoice-container');
+      this.originalTableRows = [];
+      this.headerHTML = '';
+      this.footerHTML = '';
+      this.tableHeaderHTML = '';
+      this.tableAbsoluteHTML = '';
+      this.tableNotesHTML = '';
+      this.init();
+    }
+
+    init() {
+      // 保存原始數據
+      this.saveOriginalData();
+      // 處理分頁
+      this.handlePagination();
+    }
+
+    saveOriginalData() {
+      // 保存表格行數據
+      const tableRows = document.querySelectorAll('.table-row');
+      if (tableRows.length === 0) {
+        return; // 如果沒有資料行，則不進行後續操作
+      }
+
+      tableRows.forEach(row => {
+        this.originalTableRows.push(row.cloneNode(true));
+      });
+
+      // 保存頁面結構模板
+      this.headerHTML = document.querySelector('.invoice-header').outerHTML;
+      this.tableHeaderHTML = document.querySelector('.table-header').outerHTML;
+      this.footerHTML = document.querySelector('.table-footer').outerHTML;
+      this.tableNotesHTML = document.querySelector('.col-notes').outerHTML;
+
+      // 【修改 A】: 儲存 table-absolute 的 HTML
+      const tableAbsolute = document.querySelector('.table-absolute');
+      if (tableAbsolute) {
+        this.tableAbsoluteHTML = tableAbsolute.outerHTML;
+      }
+    }
+
+    calculateRowHeight(row) {
+      // 創建臨時元素來測量行高
+      const tempContainer = document.createElement('div');
+      tempContainer.style.position = 'absolute';
+      tempContainer.style.visibility = 'hidden';
+      tempContainer.style.width = '100%';
+      tempContainer.className = 'table-section';
+
+      const tempRow = row.cloneNode(true);
+      tempContainer.appendChild(tempRow);
+      document.body.appendChild(tempContainer);
+
+      const height = tempContainer.offsetHeight;
+      document.body.removeChild(tempContainer);
+
+      return height;
+    }
+
+    groupRowsIntoPages() {
+      const pages = [];
+      let currentPage = [];
+      let currentHeight = 0;
+
+      for (let i = 0; i < this.originalTableRows.length; i++) {
+        const row = this.originalTableRows[i];
+        const rowHeight = this.calculateRowHeight(row);
+
+        // 如果加上這一行會超過最大高度，且當前頁面不為空，則開始新頁面
+        if (currentHeight + rowHeight > this.maxBodyHeight && currentPage.length > 0) {
+          pages.push([...currentPage]);
+          currentPage = [row];
+          currentHeight = rowHeight;
+        } else {
+          currentPage.push(row);
+          currentHeight += rowHeight;
+        }
+      }
+
+      // 添加最後一頁
+      if (currentPage.length > 0) {
+        pages.push(currentPage);
+      }
+
+      return pages;
+    }
+
+    createPageHTML(pageRows, currentPageNum, totalPages) {
+      // 更新頁碼
+      const updatedHeaderHTML = this.headerHTML.replace(
+        /第\d+頁\/共\d+頁/g,
+        `第${currentPageNum}頁/共${totalPages}頁`
+      );
+
+      // 創建表格行HTML
+      const rowsHTML = pageRows.map(row => row.outerHTML).join('');
+
+      // 在模板中加入 this.tableAbsoluteHTML
+      return `
+        <div class="printForm-sectionA4 print-page">
+          <div class="invoice-container">
+            ${updatedHeaderHTML}
+            <div class="table-section">
+              ${this.tableAbsoluteHTML} 
+              ${this.tableHeaderHTML}
+              <div class="table-body" style="min-height: ${this.maxBodyHeight}px;">
+                <div class="table-item">
+                ${rowsHTML}
+                </div>
+                ${this.tableNotesHTML}
+              </div>
+              ${this.footerHTML}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    handlePagination() {
+      // 如果沒有數據行，直接返回
+      if (this.originalTableRows.length === 0) {
+        console.warn('沒有找到表格數據行');
+        return;
+      }
+
+      // 將行分組到不同頁面
+      const pages = this.groupRowsIntoPages();
+      const totalPages = pages.length;
+
+      console.log(`總共需要 ${totalPages} 頁`);
+
+      // 如果只有一頁，只需要更新頁碼
+      if (totalPages <= 1) {
+        const pageNumberElement = document.querySelector('.page-number');
+        if (pageNumberElement) {
+          pageNumberElement.textContent = `第1頁/共1頁`;
+        }
+
+        // 確保table-body有最小高度
+        const tableBody = document.querySelector('.table-body');
+        if (tableBody) {
+          tableBody.style.minHeight = `${this.maxBodyHeight}px`;
+        }
+
+        return;
+      }
+
+      // 多頁處理 - 重新構建整個文檔結構
+      const bodyElement = document.body;
+
+      // 清空body內容，但保留CSS和其他必要元素
+      const formBg = document.querySelector('.formBg');
+      if (formBg) {
+        formBg.innerHTML = '';
+      }
+
+      // 為每一頁創建HTML
+      pages.forEach((pageRows, index) => {
+        const currentPageNum = index + 1;
+        const pageHTML = this.createPageHTML(pageRows, currentPageNum, totalPages);
+
+        if (formBg) {
+          formBg.insertAdjacentHTML('beforeend', pageHTML);
+        }
+      });
+
+      console.log('分頁處理完成');
+    }
+
+    // 公用方法：重新計算分頁（當數據動態變化時使用）
+    recalculatePagination() {
+      // 重新獲取當前的表格行
+      this.originalTableRows = [];
+      const currentRows = document.querySelectorAll('.table-row');
+      currentRows.forEach(row => {
+        this.originalTableRows.push(row.cloneNode(true));
+      });
+
+      // 重新處理分頁
+      this.handlePagination();
+    }
+  }
+
+  // 頁面載入完成後執行
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log('開始處理發票分頁...');
+
+    // 確保CSS已載入完成後再執行
+    setTimeout(() => {
+      const pagination = new InvoicePagination();
+
+      // 將實例綁定到window對象，方便外部調用
+      window.invoicePagination = pagination;
+    }, 100);
+  });
+
+  // 導出類別供其他腳本使用
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = InvoicePagination;
+  }
+</script>

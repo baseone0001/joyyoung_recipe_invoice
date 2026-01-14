@@ -1,0 +1,34 @@
+/* --------------------
+    列印設定 (通用)
+    -------------------- */
+@media print {
+  @page {
+    size: A4;
+    /* 移除邊距，讓 printForm-sectionA4 控制 */
+    margin: 0; 
+  }
+
+  /* 確保只有列印時，頁面容器才會有換頁效果 */
+  .print-page {
+    page-break-after: always;
+    /* 控制內容與頁邊的距離 */
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 0.5cm;
+  }
+  
+  .print-page:last-child {
+    page-break-after: avoid; /* 最後一頁不強制換頁 */
+  }
+
+  .invoice-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .table-footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+}

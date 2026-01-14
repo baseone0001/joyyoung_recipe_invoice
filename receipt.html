@@ -1,0 +1,228 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="zh-TW" />
+    <title>Document</title>
+    <!-- css -->
+    <link
+      href="css/printForm.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/receiptPrintSetting.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- layout -->
+    <link
+      href="css/receiptLayout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body class="page-container formBg">
+    <!-- <div class="fromReceipt-test"></div> -->
+    <div class="page page-front position-relative">
+      <div class="void">作廢</div>
+      <div class="receipt-front">
+        <table class="noteForm-table receipt-border">
+          <colgroup>
+            <col style="width: 16.666%" />
+            <col style="width: 16.666%" />
+            <col style="width: 16.666%" />
+            <col style="width: 16.666%" />
+            <col style="width: 16.666%" />
+            <col style="width: 16.666%" />
+          </colgroup>
+          <thead class="receipt-size-top">
+            <!-- 發票資訊 -->
+            <tr>
+              <th colspan="6" class="fz-14pt py-3mm">中揚資訊股份有限公司</th>
+            </tr>
+            <tr>
+              <th colspan="6" class="fw-bold fz-16pt">電子發票證明聯</th>
+            </tr>
+            <tr>
+              <th colspan="6" class="fw-bold fz-20pt">114年07-08月</th>
+            </tr>
+            <tr>
+              <th colspan="6" class="fw-bold fz-20pt">PL-12345678</th>
+            </tr>
+            <tr>
+              <th colspan="4" class="text-start fz-10pt ps-2mm">
+                <span>2025-09-08</span>
+                <span>11:23:25</span>
+              </th>
+              <th colspan="2" class="text-end pe-2mm">格式:25</th>
+            </tr>
+            <tr>
+              <th colspan="3" class="text-start fz-10pt ps-2mm">
+                <span>隨機碼:</span>
+                <span>1025</span>
+              </th>
+              <th colspan="3" class="text-end fz-10pt pe-2mm">
+                <span>總計:</span>
+                <span>3,760</span>
+              </th>
+            </tr>
+            <tr>
+              <th colspan="3" class="text-start fz-10pt ps-2mm">
+                <span>賣方:</span>
+                <span>80025565</span>
+              </th>
+              <th colspan="3" class="text-end fz-10pt pe-2mm">
+                <span>買方:</span>
+                <span>12325715</span>
+              </th>
+            </tr>
+            <tr>
+              <th colspan="6" class="">
+                <img src="./img/example-code39.png" alt="" />
+              </th>
+            </tr>
+            <tr>
+              <th colspan="3" class="text-start ps-2mm">
+                <span class="qr-size d-inline-block">
+                  <img src="./img/example-big5.png" alt="" />
+                </span>
+              </th>
+              <th colspan="3" class="text-end pe-2mm">
+                <span class="qr-size d-inline-block">
+                  <img src="./img/example-big5.png" alt="" />
+                </span>
+              </th>
+            </tr>
+            <tr>
+              <th colspan="6">　</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" class="text-center py-1mm">銷貨明細單</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="ps-2mm">品名/數量</td>
+              <td colspan="1" class="text-end">單價</td>
+              <td colspan="2" class="text-end pe-2mm">金額</td>
+            </tr>
+            <!-- ================================商品明細================================ -->
+            <tr>
+              <td colspan="3" class="vertical-bottom ps-2mm">
+                <div>網路功能增修</div>
+                <div class="text-end pe-1cm">1</div>
+              </td>
+              <td colspan="1" class="text-end vertical-bottom">2,400</td>
+              <td colspan="2" class="text-end vertical-bottom pe-2mm">2,400</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="vertical-bottom ps-2mm">
+                <div class="">資安弱點掃描</div>
+                <div class="text-end pe-1cm">2</div>
+              </td>
+              <td colspan="1" class="text-end vertical-bottom">400</td>
+              <td colspan="2" class="text-end vertical-bottom pe-2mm">800</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="vertical-bottom ps-2mm">
+                <div class="">其他</div>
+                <div class="text-end pe-1cm">3</div>
+              </td>
+              <td colspan="1" class="text-end vertical-bottom">20</td>
+              <td colspan="2" class="text-end vertical-bottom pe-2mm">60</td>
+            </tr>
+            <tr>
+              <td colspan="6">　</td>
+            </tr>
+            <!-- ================================商品明細================================ -->
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="1"></td>
+              <td colspan="3" class="text-end">應稅銷售額:</td>
+              <td colspan="2" class="text-end pe-2mm">3,260</td>
+            </tr>
+            <tr>
+              <td colspan="1"></td>
+              <td colspan="3" class="text-end">稅額:</td>
+              <td colspan="2" class="text-end pe-2mm">500</td>
+            </tr>
+            <tr>
+              <td colspan="1"></td>
+              <td colspan="3" class="text-end">總計:</td>
+              <td colspan="2" class="text-end pe-2mm">3,760</td>
+            </tr>
+            <tr>
+              <td colspan="6" rowspan="2" class="ps-2mm ">
+                <span class="d-inline-block">備註:</span>
+                <span class="d-inline-block md-2mm">無</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- 發票背面 -->
+    <div class="page page-back">
+      <div class="receipt-back receipt-border">
+        <div class="fz-14pt text-center pt-2mm">領獎收據</div>
+        <div>　</div>
+        <div class="d-flex">
+          <span class="d-inline-block ps-2mm">一、</span>
+          <span class="d-inline-block">金額(新台幣)_____________元整</span>
+        </div>
+        <div>　</div>
+        <div class="d-flex">
+          <span class="d-inline-block ps-2mm">二、</span>
+          <span class="d-inline-block"
+            >中獎人簽名(正楷)或蓋章<br /><br />____________________________</span
+          >
+        </div>
+        <div>　</div>
+        <div class="d-flex">
+          <span class="d-inline-block ps-2mm">三、</span>
+          <span class="d-inline-block">電話________________________</span>
+        </div>
+        <div>　</div>
+        <div class="d-flex">
+          <span class="d-inline-block ps-2mm">四、</span>
+          <span class="d-inline-block w-20px pe-1mm"
+            >兌獎若有疑慮，請洽客服專線:(手機請加02)4128282:或至下列網址查詢</span
+          >
+          <span class="qr-size-15mm pe-2mm"
+            ><img src="./img/invoice-etax.png" alt=""
+          /></span>
+        </div>
+        <div class="d-flex">
+          <span class="d-inline-block">　　</span>
+          <span class="d-inline-block fz-8pt ps-2mm"
+            >https://invoice.etax.nat.gov.tw/</span
+          >
+        </div>
+        <div>　</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    // 1. 取得兩個目標 div
+    const contentBox1 = document.querySelector(".receipt-front");
+    const contentBox2 = document.querySelector(".receipt-back");
+
+    // 2. 檢查元素是否存在，避免錯誤
+    if (contentBox1 && contentBox2) {
+      // 3. 取得第一個 div 的高度（包含 padding 和 border）
+      const height = contentBox1.offsetHeight;
+      console.log(height);
+      // 4. 將高度設定給第二個 div
+      contentBox2.style.height = `${height}px`;
+    }
+  });
+</script>

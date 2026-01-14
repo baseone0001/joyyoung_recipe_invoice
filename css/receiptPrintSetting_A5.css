@@ -1,0 +1,25 @@
+/* --------------------
+    列印設定 (通用)
+    -------------------- */
+@media print {
+  @page {
+    size: A5  landscape;
+    margin: 0;
+    /* padding: 0 1cm; */
+    
+  }
+  body {
+    margin: 0;
+  }
+  .printForm-sectionA4 {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .printForm-sectionA5 {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+}

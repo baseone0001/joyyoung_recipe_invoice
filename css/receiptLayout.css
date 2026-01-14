@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+      font-family: '標楷體';
+      src: url('../font/kaiu.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+img {
+  width: 100%;
+}
+
+.receiptBg {
+  background: #fff;
+  width: 21cm;
+}
+
+.receipt-front {
+  width: 5.7cm;
+}
+.receipt-back {
+  width: 5.7cm;
+}
+.receipt-size-top {
+  width: 5.7cm;
+  height: 9cm;
+  border-bottom: 1px dashed black;
+}
+
+.receipt-border {
+  border: 1px dashed black;
+}
+.qr-size {
+  width: 2cm;
+  height: 2cm;
+}
+.qr-size-15mm {
+  width: 1.5cm;
+  height: 1.5cm;
+}
+.fromReceipt-test {
+  width: 5.7cm;
+  height: 9cm;
+  border: 1px solid red;
+  position: absolute;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+table.noteForm-table {
+  width: 100%;
+  font-family: "標楷體";
+  font-size: 10pt;
+  color: #000;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+/* table.noteForm-table tr {
+  border-bottom: 1px solid black;
+} */
+table.noteForm-table th,
+table.noteForm-table td {
+  vertical-align:middle;
+  font-weight: normal;
+  /* border-right: 1px solid black; */
+}
+
+table.noteForm-table tbody td {
+  font-size: 9pt;
+}
+table.noteForm-table tfoot td {
+  font-size: 9pt;
+}
+
+.receipt-back div {
+  font-size: 9pt;
+  font-family: "標楷體";
+  color: #000;
+  line-height: 1.6;
+  margin: 0 0 0 0;
+}
+
+
+.text-start {
+  text-align: start;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.fw-bold{
+  font-weight: bold !important;
+}
+
+.fz-20pt{
+  font-size: 20pt !important;
+}
+.fz-16pt{
+  font-size: 16pt !important;
+}
+.fz-14pt{
+  font-size: 14pt !important;
+}
+.fz-12pt{
+  font-size: 12pt !important;
+}
+.fz-10pt{
+  font-size: 10pt !important;
+}
+.fz-9pt{
+  font-size: 9pt !important;
+}
+.fz-8pt{
+  font-size: 8pt !important;
+}
+
+
+.w-100 {
+  width: 100%;
+}
+.w-20px {
+  width: 120px;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.py-3mm{
+  padding-top: 0.3cm;
+  padding-bottom: 0.3cm;
+}
+.py-1mm{
+  padding-top: 0.1cm;
+  padding-bottom: 0.1cm;
+}
+.pt-2mm {
+  padding-top: 0.2cm;
+}
+
+.ps-2mm{
+  padding-left: 0.2cm;
+}
+.pe-1mm{
+  padding-right: 0.1cm;
+}
+.pe-2mm{
+  padding-right: 0.2cm;
+}
+.pe-5mm{
+  padding-right: 0.5cm;
+}
+.pe-1cm{
+  padding-right: 1cm;
+}
+.px-1mm{
+  padding-left: 0.1cm;
+  padding-right: 0.1cm;
+}
+.md-2mm{
+  margin-bottom: 0.2cm;
+}
+.position-relative{
+  position: relative;
+}
+
+.vertical-bottom{
+  vertical-align:bottom !important;
+}
+
+.void {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    color: red;
+    border: 3px solid red;
+    border-radius: 5px;
+    font-size: 20pt;
+    font-weight: 700;
+    transform: rotate(10deg);
+}
